@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body { font-family: sans-serif; background: #0f172a; color: #fff; margin: 0; padding: 20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 15px; }
+    nav a { color: #38bdf8; text-decoration: none; margin-left: 15px; }
+    .profile-card { background: #1e293b; max-width: 400px; margin: 40px auto; padding: 25px; border-radius: 12px; text-align: center; }
+    .avatar { width: 90px; height: 90px; border-radius: 50%; background: #38bdf8; color: #0f172a; font-size: 2.5rem; line-height: 90px; margin: 0 auto 15px; font-weight: bold; }
+    .stats { display: flex; justify-content: space-around; margin-top: 20px; border-top: 1px solid #334155; padding-top: 15px; }
+    .stat-val { font-size: 1.2rem; font-weight: bold; color: #38bdf8; }
+    .stat-lbl { font-size: 0.8rem; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong style="color:#38bdf8;">My App</strong>
+    <div>
+      <a href="lobby.html">Lobby</a>
+      <a href="landing.html" style="color:#ef4444;">Logout</a>
+    </div>
+  </nav>
+
+  <div class="profile-card">
+    <div class="avatar">JD</div>
+    <h2>John Doe</h2>
+    <p style="color: #94a3b8;">@johndoe • Web Developer</p>
+    
+    <div class="stats">
+      <div>
+        <div class="stat-val">12</div>
+        <div class="stat-lbl">Games</div>
+      </div>
+      <div>
+        <div class="stat-val">1,420</div>
+        <div class="stat-lbl">Points</div>
+      </div>
+      <div>
+        <div class="stat-val">#4</div>
+        <div class="stat-lbl">Rank</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

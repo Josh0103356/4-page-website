@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobby | Community</title>
+  <style>
+    body { font-family: sans-serif; background: #0f172a; color: #fff; margin: 0; padding: 20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 15px; }
+    nav a { color: #38bdf8; text-decoration: none; margin-left: 15px; }
+    .lobby-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 25px; }
+    .room-card { background: #1e293b; padding: 20px; border-radius: 8px; border: 1px solid #334155; }
+    .room-card h3 { margin-top: 0; color: #38bdf8; }
+    .status { font-size: 0.85rem; color: #22c55e; font-weight: bold; }
+    .btn { display: inline-block; background: #0284c7; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; margin-top: 10px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong style="color:#38bdf8;">Main Lobby</strong>
+    <div>
+      <a href="profile.html">My Profile</a>
+      <a href="landing.html" style="color:#ef4444;">Exit</a>
+    </div>
+  </nav>
+
+  <h2>Active Rooms</h2>
+  <div class="lobby-grid">
+    <div class="room-card">
+      <h3>Room #1 - Casual Chat</h3>
+      <p class="status">● 4/10 Active</p>
+      <a href="#" class="btn">Join Room</a>
+    </div>
+    <div class="room-card">
+      <h3>Room #2 - HTML Developers</h3>
+      <p class="status">● 8/10 Active</p>
+      <a href="#" class="btn">Join Room</a>
+    </div>
+    <div class="room-card">
+      <h3>Room #3 - Speed Coding</h3>
+      <p class="status">● 2/10 Active</p>
+      <a href="#" class="btn">Join Room</a>
+    </div>
+  </div>
+</body>
+</html>
