@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | My App</title>
-  <style>
-    body { font-family: sans-serif; background: #0f172a; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-    .card { background: #1e293b; padding: 30px; border-radius: 12px; width: 100%; max-width: 350px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-    h2 { margin-top: 0; color: #38bdf8; text-align: center; }
-    label { font-size: 0.9rem; color: #94a3b8; display: block; margin-top: 15px; }
-    input { width: 100%; padding: 10px; margin-top: 5px; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #fff; box-sizing: border-box; }
-    .btn { width: 100%; background: #0284c7; color: white; padding: 12px; border: none; border-radius: 6px; font-weight: bold; margin-top: 20px; cursor: pointer; }
-    .footer-text { text-align: center; margin-top: 15px; font-size: 0.85rem; color: #94a3b8; }
-    .footer-text a { color: #38bdf8; text-decoration: none; }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Reads - Login</title>
+    <style>
+        .logo-r {
+            display: inline-block;
+            background: linear-gradient(135deg, #d62828, #f77f00);
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            text-decoration: none;
+        }
+        /* Small size for the top-left header */
+        .logo-small {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Account Login</h2>
-    <form action="lobby.html">
-      <label for="username">Username</label>
-      <input type="text" id="username" placeholder="Enter username" required>
-      
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="••••••••" required>
-      
-      <button type="submit" class="btn">Sign In</button>
-    </form>
-    <p class="footer-text">Back to <a href="landing.html">Landing Page</a></p>
-  </div>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <!-- Top-left Logo -->
+            <a href="index.html" class="logo-r logo-small">R</a>
+            <nav style="display: inline-block; margin-left: 20px;">
+                <a href="index.html">Home</a> | 
+                <a href="login.html">Login</a> | 
+                <a href="registration.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Body / Main Content Section -->
+    <main>
+        <div>
+            <h2>Login to Your Account</h2>
+            <p>[ Login Form Placeholder ]</p>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <p>&copy; 2026 Rush Reads. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
