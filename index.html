@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rush Reads - Home</title>
+    <title>Rush Reads - Landing Page</title>
     <style>
         /* Styled Capital R Logo */
         .logo-r {
@@ -14,27 +14,224 @@
             font-family: 'Georgia', serif;
             font-weight: bold;
             text-align: center;
-            border-radius: 12px;
-            box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
             text-decoration: none;
         }
-        /* Large size for the center of the landing page */
+        
+        .logo-small {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
         .logo-large {
-            font-size: 5rem;
-            width: 120px;
-            height: 120px;
-            line-height: 120px;
+            font-size: 4rem;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            border-radius: 12px;
+            box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Layout Structure */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-container {
+            margin: 20px 0;
+        }
+
+        .search-container input[type="text"] {
+            width: 60%;
+            padding: 8px;
+            font-size: 1rem;
+        }
+
+        .search-container button {
+            padding: 8px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .content-section {
+            text-align: left;
+            margin: 25px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .auth-actions {
+            margin-top: 30px;
+        }
+
+        .auth-actions a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #d62828;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer-content div {
+            margin: 10px;
+        }
+
+        .footer-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-content li {
+            margin-bottom: 5px;
+        }
+
+        .footer-content a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header / Nav Section -->
     <header>
+        <div class="header-left">
+            <a href="index.html" class="logo-r logo-small">R</a>
+            <h2>Rush Reads</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="#">Menu</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Body / Main Content Section -->
+    <main>
+        <!-- Logo & Branding -->
         <div>
+            <div class="logo-r logo-large">R</div>
+            <h1>Rush Reads</h1>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search for books, authors, or genres...">
+            <button type="button">Search</button>
+        </div>
+
+        <!-- Recommended Section -->
+        <section class="content-section">
+            <h3>Recommended</h3>
+            <p>[ Recommended reading content and featured books are display here ]</p>
+        </section>
+
+        <!-- Rising Stars Section -->
+        <section class="content-section">
+            <h3>Rising Stars</h3>
+            <p>[ Trending new authors and up-and-coming titles display here ]</p>
+        </section>
+
+        <!-- Popular Section (Daily, Weekly, Monthly) -->
+        <section class="content-section">
+            <h3>Popular</h3>
             <nav>
-                <a href="index.html">Home</a> | 
-                <a href="login.html">Login</a> | 
+                <a href="#daily">Daily</a> | 
+                <a href="#weekly">Weekly</a> | 
+                <a href="#monthly">Monthly</a>
+            </nav>
+            <p>[ Popular books filtered by Daily, Weekly, or Monthly activity ]</p>
+        </section>
+
+        <!-- Sign In / Register Actions -->
+        <div class="auth-actions">
+            <a href="login.html">Sign In</a>
+            <a href="registration.html">Register</a>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter (X)</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Rush Reads. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>                <a href="login.html">Login</a> | 
                 <a href="registration.html">Register</a> | 
                 <a href="lobby.html">Lobby</a>
             </nav>
